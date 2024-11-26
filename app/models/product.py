@@ -13,6 +13,7 @@ class Product(BaseModel):
     stock: int
     thumbnail: str = ""
 
+    
     # https://docs.pydantic.dev/latest/concepts/validators/
     # if thumbnail missing, use a default
     @field_validator('thumbnail')
